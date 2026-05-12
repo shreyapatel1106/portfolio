@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-logo">S<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-lines"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-tag reveal">Hello, World!</p>
+    <h1 class="hero-title reveal">
+      I'm <em>Shreya</em>,<br />a Developer &amp;<br />Problem Solver.
+    </h1>
+    <p class="hero-sub reveal">
+      Building thoughtful digital experiences at the intersection of clean code and elegant design.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost">Let's Talk →</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <span>Open to opportunities</span>
+    <div class="badge-dot"></div>
+  </div>
+  <a href="#about" class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </a>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="section-label reveal">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Crafting code,<br /><em>one line at a time.</em></h2>
+        <p>I'm a Computer Science student at Swaminarayan University, passionate about building full-stack applications that are both functional and delightful to use.</p>
+        <p>I love exploring everything from machine learning pipelines to system administration — if it's technical and challenging, I'm in.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Projects Built</span></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Tech Stacks</span></div>
+          <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="avatar-card">
+          <div class="avatar-initials">S</div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="floating-tag tag-1">Flask</div>
+          <div class="floating-tag tag-2">Python</div>
+          <div class="floating-tag tag-3">C#</div>
+          <div class="floating-tag tag-4">ML</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal">02 / Skills</div>
+    <h2 class="section-title reveal">What I Work With</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚙️</div>
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>C#</span><span>JavaScript</span><span>PHP</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <h3>Web &amp; Frameworks</h3>
+        <div class="skill-tags">
+          <span>Flask</span><span>Django</span><span>Bootstrap</span><span>HTML/CSS</span><span>React</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <h3>Machine Learning</h3>
+        <div class="skill-tags">
+          <span>Scikit-learn</span><span>KNN</span><span>Linear Regression</span><span>Pandas</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🖥️</div>
+        <h3>Systems &amp; Tools</h3>
+        <div class="skill-tags">
+          <span>Linux</span><span>SSH</span><span>Git</span><span>MySQL</span><span>SQLite</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill bars -->
+    <div class="skill-bars reveal">
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Python / Flask</span><span>90%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>C# / .NET</span><span>80%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Frontend (HTML/CSS/JS)</span><span>85%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Machine Learning</span><span>70%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span>Linux / DevOps</span><span>75%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label reveal">03 / Projects</div>
+    <h2 class="section-title reveal">Selected Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-body">
+          <div class="project-tags"><span>Flask</span><span>MySQL</span><span>JS</span></div>
+          <h3>EduERP — College Management System</h3>
+          <p>A full-featured ERP for colleges with role-based authentication, attendance tracking, marks management, PDF reports, and a notice board.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub →</a>
+            <a href="#" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">02</div>
+        <div class="project-body">
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>PDF</span></div>
+          <h3>Resume Builder SaaS</h3>
+          <p>Live-preview resume builder with dual templates, real-time editing, and one-click PDF export. Built with PHP and MySQL.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub →</a>
+            <a href="#" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-body">
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>Admin</span></div>
+          <h3>Student Feedback System</h3>
+          <p>Feedback collection platform with an admin panel, real-time validation, anonymous submission, and analytics dashboard.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub →</a>
+            <a href="#" class="proj-link">Live Demo →</a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">04</div>
+        <div class="project-body">
+          <div class="project-tags"><span>Python</span><span>Scikit-learn</span><span>ML</span></div>
+          <h3>ML Algorithms from Scratch</h3>
+          <p>Implementations of KNN, Linear Regression, and other ML models — comparing custom vs library results with visualisations.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label reveal">04 / Contact</div>
+    <h2 class="section-title reveal">Get In Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm currently open to internship opportunities, freelance projects, and collaborations. Whether you have a question or just want to say hi — my inbox is always open!</p>
+        <div class="contact-links">
+          <a href="mailto:shreya@example.com" class="contact-item">
+            <span class="ci-icon">✉</span>
+            <span>shreyapatel3700@example.com</span>
+          </a>
+          <a href="https://github.com/" target="_blank" class="contact-item">
+            <span class="ci-icon">⌥</span>
+            <span>https://github.com/shreyapatel1106</span>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" class="contact-item">
+            <span class="ci-icon">in</span>
+            <span>linkedin.com/in/shreya</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="submitBtn">
+          <span id="btnText">Send Message</span>
+          <span id="btnLoader" class="btn-loader hidden">Sending…</span>
+        </button>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">S<span>.</span></span>
+    <span class="footer-copy">© 2025 Shreya · Crafted with ♥ &amp; Flask</span>
+    <span class="footer-back"><a href="#hero">↑ Back to top</a></span>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
