@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-DB_PATH = "portfolio.db"
+DB_PATH = "/tmp/portfolio.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
