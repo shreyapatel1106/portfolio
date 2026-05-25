@@ -333,6 +333,15 @@ section { padding: 7rem 0; }
   color: var(--cream);
   z-index: 2; position: relative;
 }
+.avatar-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    position: relative;
+    z-index: 2;
+}
 .avatar-ring {
   position: absolute;
   border-radius: 50%;
